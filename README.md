@@ -4,7 +4,7 @@ An end-to-end batch data pipeline that extracts NYC Yellow Taxi trip data from t
 
 ## Architecture
 
-![Pipeline architecture](./architecture.png)
+![Pipeline architecture](./architecture.jpg)
 
 The pipeline runs monthly. Each run pulls a sample of that month's trips from the Socrata API, lands them as raw JSON, transforms them into a clean/quarantine silver layer plus three gold aggregate tables, registers everything in the AWS Glue Data Catalog, and runs an automated data quality check before the run is considered complete.
 
