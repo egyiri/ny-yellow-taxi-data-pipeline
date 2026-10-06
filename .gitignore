@@ -1,0 +1,34 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+
+# Keep Terraform provider lock file
+# .terraform.lock.hcl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Airflow
+airflow.cfg
+airflow.db
+logs/
+
+# VS Code
+.vscode/
+
+# Secrets
+.env
+*.pem
+*.key
+
+# AWS
+.aws/
